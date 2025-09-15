@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Poppins", sans-serif;
+    --background-color: #37353E;
+    --text-color: #D3DAD9;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.site {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background: url(background.svg)no-repeat;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+fieldset {
+    margin-inline: auto;
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    padding: 2rem;
+    border: 1px solid;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+}
+
+input {
+    appearance: none;
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+    max-width: 20rem;
+    outline: none;
+}
+
+::placeholder {
+    padding-left: .50rem;
+}
+
+a {
+    font-weight: 600;
+}
+
+@media(max-width: 600px) {
+    fieldset {
+        width: 20rem;
+    }
+
+    label {
+        font-size: small;
+    }
+
+    input {
+        max-width: 10rem;
+    }
+
+    ::placeholder {
+        text-transform: lowercase;
+        padding-left: .25rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}

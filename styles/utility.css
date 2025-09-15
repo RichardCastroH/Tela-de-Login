@@ -1,0 +1,44 @@
+.container {
+  max-width: 1200px; /* limite máximo do tamanho */
+  width: 100%;       /* ocupa 100% até chegar no limite */
+  margin: 0 auto;    /* centraliza horizontalmente */
+  padding: 0 20px;   /* respiro nas laterais */
+}
+
+.flex {
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.field {
+    padding-left: 12px; /* desloca o texto digitado e o placeholder */
+    text-align: left;   /* alinha o texto para a esquerda (ou center/right) */
+    text-transform: uppercase;
+    color: #44444E;
+}
+
+
+.input-submit {
+    border: none;
+    margin-top: 1rem;
+    width: 6rem;
+}
+
+.send {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #44444E;
+    text-transform: uppercase;
+    padding: .32rem;
+}
+
+@media(max-width <= 600px) {
+    .container {
+        max-width: 300px;
+    }
+}
