@@ -40,19 +40,13 @@ fieldset {
     margin-inline: auto;
     display: flex;
     text-align: center;
-    gap: 1rem;
+    gap: .80rem;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 32rem;
     padding: 2rem;
     border: 1px solid;
-}
-
-legend {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 label {
@@ -69,12 +63,22 @@ input {
     outline: none;
 }
 
+input:focus {
+    border: solid 2px #5837c7;
+}
+
 ::placeholder {
     padding-left: .50rem;
 }
 
 a {
     font-weight: 600;
+}
+
+.send:hover {
+    background-color: #37353E;
+    color: #D3DAD9;
+    border: 1px solid #D3DAD9;
 }
 
 @media(max-width: 600px) {
