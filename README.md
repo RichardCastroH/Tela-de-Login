@@ -8,4 +8,4 @@
 - CSS
 ##
 ### Imagem do projeto
-![Print do projeto](./assets/Captura%20de%20tela%202025-09-20%20113625.png)
+![Print do projeto](./assets//imagem%20projeto.png)
